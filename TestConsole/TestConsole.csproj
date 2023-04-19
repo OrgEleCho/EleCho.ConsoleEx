@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EleCho.ConsoleEx\EleCho.ConsoleUtilities.csproj" />
     <ProjectReference Include="..\NullLib.ConsoleEx\EleCho.ConsoleUtilities.csproj" />
   </ItemGroup>
 

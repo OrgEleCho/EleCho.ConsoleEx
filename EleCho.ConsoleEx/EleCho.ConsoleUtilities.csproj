@@ -7,7 +7,7 @@
     <Description>Console application extension: dynamic input/output, special input expansion, character width measurement.</Description>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
-    <PackageLicenseExpression>Apache2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <ApplicationIcon>icon.ico</ApplicationIcon>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
