@@ -1,19 +1,19 @@
-# NullLib.ConsoleEx
- Extension functions for C# Console apps
+# EleCho.ConsoleEx
 
-> namespace root: NullLib.ConsoleEx
+Extension functions for C# Console apps
 
- ## Measure Console Text
 
- 1. ConsoleText.CalcCharLength(char c)
-  2. ConsoleText.CalcStringLength(string str)
-  3. ConsoleText.IsWideChar(char c)
+## Measure Console Text
+
+1. ConsoleText.CalcCharLength(char c)
+2. ConsoleText.CalcStringLength(string str)
+3. ConsoleText.IsWideChar(char c)
+
 
 ## Advanced Scanner
 
-1. ConsoleSc.Prompt = "some string"
-2. ConsoleSc.ReadAsync(ConsoleKey until, bool intercept)
-3. ConsoleSc.ReadLine()
+1. ConsoleSc.PromptForInput = "some string"
+2. ConsoleSc.ReadLine()
 
 > And lots of overrides for more features.
 
@@ -29,7 +29,12 @@ Up arrow : Switch to the previous input history
 Down arror : Switch to the next input history (when in history end, use this key will clear all characters)
 ```
 
+## Data input extensions
 
+1. ConsoleSc.YesOrNo("message")
+2. ConsoleSc.Select&lt;TEnum&gt;("message")
+3. ConsoleSc.ReadForDateTime("message")
+4. ConsoleSc.PressAnyKeyToContinue()
 
 ## Features
 

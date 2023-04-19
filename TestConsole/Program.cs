@@ -4,7 +4,7 @@ using System.Text;
 using System.Text.Unicode;
 using System.Threading;
 using System.Threading.Tasks;
-using NullLib.ConsoleEx;
+using EleCho.ConsoleUtilities;
 
 namespace TestConsole
 {
@@ -12,16 +12,26 @@ namespace TestConsole
     {
         static Program()
         {
-            ConsoleSc.Prompt = ">>> ";
+            ConsoleSc.PromptForInput = ">>> ";
         }
         
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
+            ConsoleSc.PressAnyKeyToContinue();
+
+            //_ = Task.Run(async () =>
+            //{
+            //    while (true)
+            //    {
+            //        await Task.Delay(1000);
+            //        ConsoleSc.WriteLine(DateTime.Now.ToString());
+            //    }
+            //});
+
             while(true)
             {
-                string qwq = await ConsoleSc.ReadLineAsync();
-                int size = qwq.Select(c => ConsoleText.IsFullWidthChar(c) ? 2 : 1).Sum();
-                Console.WriteLine(size);
+                DateTime qwq = ConsoleSc.ReadForDateTime("Input a date time");
+                ConsoleSc.WriteLine(qwq.ToString());
             }
         }
     }

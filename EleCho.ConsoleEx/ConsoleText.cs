@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace NullLib.ConsoleEx
+namespace EleCho.ConsoleUtilities
 {
     public static class ConsoleText
     {
