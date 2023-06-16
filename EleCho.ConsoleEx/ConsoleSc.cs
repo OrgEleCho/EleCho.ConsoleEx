@@ -541,7 +541,6 @@ namespace EleCho.ConsoleUtilities
 
             while (true)
             {
-                ConsoleSc.Write(PrefixForInput);
                 var input =
                     ConsoleSc.ReadLine();
 

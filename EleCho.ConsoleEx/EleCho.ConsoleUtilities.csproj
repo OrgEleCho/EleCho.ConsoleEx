@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6</TargetFramework>
-    <Version>1.1.4.5</Version>
+    <Version>1.1.4.6</Version>
     <Authors>EleCho</Authors>
     <Description>Console application extension: dynamic input/output, special input expansion, character width measurement.</Description>
     <LangVersion>latest</LangVersion>
